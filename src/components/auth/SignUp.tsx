@@ -56,7 +56,7 @@ export default function SignUp(props: { switchToLogin: () => void }) {
             return;
         }
 
-        handleSubmit({
+         await handleSubmit({
             email: formState.email,
             username: formState.username,
             password: formState.password,

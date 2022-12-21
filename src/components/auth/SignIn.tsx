@@ -49,7 +49,7 @@ export default function SignIn(props: { switchToSignup: () => void }) {
             return;
         }
 
-        handleSubmit({
+        await handleSubmit({
             email: formState.email,
             password: formState.password,
         });

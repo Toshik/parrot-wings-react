@@ -80,7 +80,7 @@ export default function TransferForm() {
 
         setValidateOnChange(false);
 
-        transferFunds({name: username, amount: amount});
+        await transferFunds({name: username, amount: amount});
         dispatch(setTransferState({username: '', searchTerm: '', amount: 1}));
         setChosenOption(null);
     }, [amount, dispatch, transferFunds, username, validate]);
